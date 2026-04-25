@@ -9,6 +9,12 @@ cask "keycleaner" do
 
   app "KeyboardCleaner.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/KeyboardCleaner.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.egowic.KeyboardCleaner.plist",
   ]
