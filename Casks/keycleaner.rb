@@ -1,6 +1,6 @@
 cask "keycleaner" do
-  version "1.2.0"
-  sha256 "036be294c566b86d108cd656eaad3db84a27a6dcd9e8864abffb1e75dab22e3c"
+  version "1.3.0"
+  sha256 "3777f1bc1531ac65b2808cd6108c49758e61f94ab2284d6828504cfdf3137645"
 
   url "https://github.com/egowic/KeyboardCleaner/releases/download/v#{version}/KeyboardCleaner.zip"
   name "KeyboardCleaner"
